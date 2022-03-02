@@ -1,0 +1,26 @@
+{
+  "name": "mentors",
+  "version": "1.0.0",
+  "description": "Curso de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Nic-Hawk/desarrollo-web-MI.git"
+  },
+  "author": "Luis Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nic-Hawk/desarrollo-web-MI/issues"
+  },
+  "homepage": "https://github.com/Nic-Hawk/desarrollo-web-MI#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
+}
