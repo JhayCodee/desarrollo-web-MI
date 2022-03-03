@@ -1,0 +1,125 @@
+@use '../base/variables' as v;
+
+.header {
+    background-color: v.$gris;
+    height: 80px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+
+    .nav-menu-item {
+        font-size: 27px;
+        margin: 0 10px;
+        line-height: 80px;
+        width: max-content;
+
+        .nav-menu-link {
+            padding: 8px 12px;
+            border-radius: 3px;
+        }
+
+        .nav-menu-link:hover,
+        .nav-menu-link_active {
+            background-color: #034574;
+            transition: .6s;
+        }
+
+    }
+
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    color: v.$blanco;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 0;
+    }
+
+    .header {
+        height: 60px;
+    }
+    
+    .nav {
+        .logo {
+            font-size: 25px;
+            padding: 0 20px;
+            line-height: 60px;
+        }
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        margin-right: 20px;
+        background-color: v.$grisClaro;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left .3s;
+    
+        .nav-menu-item {
+           
+            line-height: 70px;
+
+            .nav-menu-link:hover,
+            .nav-menu-link_active {
+                background: none;
+                color: v.$verdeTurqueza;
+            }
+    
+        }
+    
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu_visible {
+        left: 0;
+    }
+}
