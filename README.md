@@ -1,5 +1,5 @@
 # Desarrollo-web-MI
 
-## Curso de darrollo web impartido por Mentors International
+## Curso de desarrollo web impartido por Mentors International
 
 - Portafolio web
