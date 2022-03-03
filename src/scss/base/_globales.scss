@@ -56,3 +56,19 @@ img {
     max-width: 120rem;
     margin: 0 auto;
 }
+
+.boton {
+    background-color: v.$verdeTurqueza;
+    color: v.$gris;
+    font-weight: 700;
+    padding: .8rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
