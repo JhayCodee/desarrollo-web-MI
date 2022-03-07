@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 
     .hero-text {
         text-align: center;
@@ -14,16 +14,22 @@
 
         h1 {
             margin: 3rem auto;
-            font-size: 3rem;
+            font-size: 4.5rem;
             color: v.$verde;
         }
 
-        h3 {
+        p {
            font-size: 2.5rem;
         }
 
         .hero-contacto{
             margin-top: 5rem;
+
+            a {
+                color: v.$negro;
+                font-size: 2.3rem;
+                font-weight: bold;
+            }
         }
 
     }
@@ -38,7 +44,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            height: 85vh;
+            height: 90vh;
         }
 
         .hero-text {
@@ -46,6 +52,10 @@
 
             h1 {
                 margin: 1rem auto;
+            }
+
+            .hero-contacto{
+                margin-top: 3rem;
             }
 
         }
@@ -57,5 +67,7 @@
             max-width: 350px;
             max-width: 350px;
         }
+        
+        
     }
 }

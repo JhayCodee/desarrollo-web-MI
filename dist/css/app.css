@@ -377,6 +377,10 @@ a {
   font-size: 2rem;
 }
 
+span {
+  font-size: 2rem;
+}
+
 ul {
   list-style: none;
 }
@@ -400,7 +404,7 @@ img {
   font-weight: 700;
   padding: 0.8rem 2rem;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 1.6rem;
   cursor: pointer;
 }
 
@@ -521,21 +525,26 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 .hero .hero-text {
   text-align: center;
 }
 .hero .hero-text h1 {
   margin: 3rem auto;
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #59f590;
 }
-.hero .hero-text h3 {
+.hero .hero-text p {
   font-size: 2.5rem;
 }
 .hero .hero-text .hero-contacto {
   margin-top: 5rem;
+}
+.hero .hero-text .hero-contacto a {
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: bold;
 }
 .hero .hero-img {
   display: none;
@@ -545,13 +554,16 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 85vh;
+    height: 90vh;
   }
   .hero .hero-text {
     text-align: left;
   }
   .hero .hero-text h1 {
     margin: 1rem auto;
+  }
+  .hero .hero-text .hero-contacto {
+    margin-top: 3rem;
   }
   .hero .hero-img {
     display: block;
@@ -560,4 +572,64 @@ img {
     max-width: 350px;
     max-width: 350px;
   }
+}
+
+.sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  max-height: 45vh;
+}
+.sobremi .sobremi-texto .sobremi-info {
+  margin: 1rem;
+  text-align: justify;
+}
+.sobremi .sobremi-img {
+  max-width: 250px;
+}
+@media (min-width: 768px) {
+  .sobremi {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .sobremi .sobremi-img {
+    max-width: 450px;
+  }
+}
+
+.sobremi-texto .sobremi-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.sobremi-texto .sobremi-titulo span {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.sobremi-texto .sobremi-titulo .linea {
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #59f590;
+  margin: 0.5rem;
+}
+
+.sobremi-bg {
+  background-color: #262626;
+}
+
+.lp {
+  color: #00aeff;
+}
+
+.sql {
+  color: #00aeff;
+}
+
+.web {
+  color: #00aeff;
 }
