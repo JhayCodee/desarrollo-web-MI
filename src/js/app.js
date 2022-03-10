@@ -11,12 +11,18 @@ function Menu() {
     });
 
     navlinks.forEach( (link) => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            
             toggleMenu();
+            e.preventDefault();
+            const seccionScroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+            seccion.scrollIntoView({behavior: 'smooth'});
         });
     });
     
 }
+
 
 function toggleMenu() {
     navMenu.classList.toggle('nav-menu_visible');
