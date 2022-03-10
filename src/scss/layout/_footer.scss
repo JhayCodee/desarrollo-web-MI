@@ -1,0 +1,35 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    .rights {
+        text-align: center;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: auto 1rem;
+        }
+
+        i:hover {
+            color:v.$azul;
+        }
+
+    }
+
+    @include m.tablet {
+        & {
+            justify-content: space-evenly;
+        }
+    }
+}

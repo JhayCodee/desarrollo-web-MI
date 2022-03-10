@@ -21,5 +21,3 @@ function Menu() {
 function toggleMenu() {
     navMenu.classList.toggle('nav-menu_visible');
 }
-
-
