@@ -348,6 +348,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   background-color: #212121;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -362,6 +363,11 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 2.5rem;
   color: #ffffff;
 }
 
@@ -412,6 +418,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+i {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.rosado {
+  color: #e31f71;
+}
+
+.azul {
+  color: #00aeff;
 }
 
 .header {
@@ -579,7 +598,7 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
-  max-height: 45vh;
+  min-height: 45vh;
 }
 .sobremi .sobremi-texto .sobremi-info {
   margin: 1rem;
@@ -632,4 +651,166 @@ img {
 
 .web {
   color: #00aeff;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicios-contenedor {
+  margin: 5rem;
+}
+.servicios-contenedor .servicios-titulo {
+  text-align: center;
+}
+.servicios-contenedor .servicios-titulo span {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.servicios-contenedor .servicios-titulo .linea {
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #59f590;
+  margin: 0.5rem;
+}
+.servicios-contenedor .servicios-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicios-contenedor .servicios-cards .card {
+  background: #262626;
+  box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  min-height: 30rem;
+  width: 30rem;
+  padding: 3rem;
+  margin: 3rem auto;
+}
+.servicios-contenedor .servicios-cards .card > h4 {
+  margin: 1rem auto;
+}
+.servicios-contenedor .servicios-cards .card:hover {
+  transition: 1s ease;
+  transform: scale(1.05);
+}
+@media (min-width: 768px) {
+  .servicios-contenedor .servicios-cards {
+    flex-direction: row;
+  }
+  .servicios-contenedor .servicios-cards .card {
+    margin: 3rem;
+  }
+}
+
+.proyectos {
+  background-color: #262626;
+}
+
+.proyectos-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos-contenedor .proyectos-titulo {
+  margin: 3rem auto;
+  text-align: center;
+}
+.proyectos-contenedor .proyectos-titulo span {
+  display: inline-block;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.proyectos-contenedor .proyectos-titulo .linea {
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #59f590;
+  margin: 0.5rem;
+}
+.proyectos-contenedor .proyectos-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.proyectos-contenedor .proyectos-cards a {
+  margin: 2rem;
+}
+.proyectos-contenedor .proyectos-cards a .card-p {
+  background-color: #212121;
+  padding: 3rem;
+  box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 28rem;
+  border-radius: 0.8rem;
+}
+.proyectos-contenedor .proyectos-cards a .card-p:hover {
+  transition: ease 1s;
+  background-color: #00aeff;
+}
+@media (min-width: 992px) {
+  .proyectos-contenedor .proyectos-cards {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .proyectos-contenedor .proyectos-cards a {
+    margin: 0;
+  }
+  .proyectos-contenedor .proyectos-cards a .card-p {
+    width: auto;
+  }
+  .proyectos-contenedor .a {
+    grid-area: 1/1/2/3;
+  }
+  .proyectos-contenedor .b {
+    grid-area: 1/3/2/5;
+  }
+  .proyectos-contenedor .c {
+    grid-area: 2/1/4/2;
+  }
+  .proyectos-contenedor .d {
+    grid-area: 2/2/3/4;
+  }
+  .proyectos-contenedor .f {
+    grid-area: 2/4/4/5;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.footer .rights {
+  text-align: center;
+}
+.footer .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contacto a {
+  margin: auto 1rem;
+}
+.footer .contacto i:hover {
+  color: #00aeff;
+}
+@media (min-width: 768px) {
+  .footer {
+    justify-content: space-evenly;
+  }
 }
