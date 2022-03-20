@@ -7,11 +7,21 @@
     font-size:62.5%; 
 }
 
+body, html {
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
     background-color: v.$gris;
     scroll-behavior: smooth;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 7rem;
 }
 
 h1 {
@@ -73,7 +83,7 @@ img {
     font-weight: 700;
     padding: .8rem 2rem;
     text-align: center;
-    border-radius: 1.6rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
