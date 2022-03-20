@@ -36,8 +36,23 @@
            
         }
 
-    }
 
+      
+
+    }
+}
+
+@include m.tablet {
+
+      #sobremi {
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+
+            -moz-box-shadow: 0 4px 4px rgba(50, 50, 50, 0.75);
+            -webkit-box-shadow: 0 4px 4px rgba(50, 50, 50, 0.75);
+            box-shadow: 0 4px 4px rgba(50, 50, 50, 0.75); 
+        }
+    
 }
 
 .sobremi-texto .sobremi-titulo {
@@ -63,6 +78,8 @@
     }
 
 }
+
+
 
 .sobremi-bg {
     background-color: v.$grisClaro;

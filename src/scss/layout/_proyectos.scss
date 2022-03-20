@@ -68,6 +68,8 @@
 
     @include m.desktop {
 
+       
+
         .proyectos-cards {
             margin: 3rem auto;
             display: grid;
@@ -109,4 +111,14 @@
         }
     }
 
+}
+
+@include m.tablet {
+    #proyectos {
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    }
 }
