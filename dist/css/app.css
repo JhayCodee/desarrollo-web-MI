@@ -684,6 +684,7 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 .proyectos-contenedor .proyectos-cards a {
   margin: 2rem;
