@@ -23,6 +23,19 @@
            font-size: 2.5rem;
         }
 
+        .typing {
+            position: relative;
+        }
+
+        .typing::after {
+            content: "";
+            position: absolute;
+            width: 0.1rem;
+            height: 4rem;
+            border-right: 0.2rem solid white;
+            animation: blink 0.6s infinite ease;
+        }
+
         .hero-contacto{
             margin-top: 5rem;
 
@@ -50,7 +63,6 @@
 
         .hero-text {
             text-align: left;
-
             h1 {
                 margin: 1rem auto;
             }
@@ -58,6 +70,8 @@
             .hero-contacto{
                 margin-top: 3rem;
             }
+
+            
 
         }
 
@@ -70,5 +84,14 @@
         }
         
         
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

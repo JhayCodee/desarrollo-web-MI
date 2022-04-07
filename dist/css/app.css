@@ -490,6 +490,17 @@ i {
 .hero .hero-text p {
   font-size: 2.5rem;
 }
+.hero .hero-text .typing {
+  position: relative;
+}
+.hero .hero-text .typing::after {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  height: 4rem;
+  border-right: 0.2rem solid white;
+  animation: blink 0.6s infinite ease;
+}
 .hero .hero-text .hero-contacto {
   margin-top: 5rem;
 }
@@ -526,6 +537,14 @@ i {
   }
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .sobremi {
   display: flex;
   flex-direction: column;
